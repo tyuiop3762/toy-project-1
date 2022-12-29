@@ -1,13 +1,28 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 
+공통 컴포넌트를 추출 할 수 있는가?
+페이지와 분리된 컴포넌트 찾기가 용이한가?
+유지보수에 용이한가?
+비즈니스 로직과 분리가 되어 있는가?
+
+
+컴포넌트 분리하기
+컴포넌트 페이지 폴더 생성
+index 파일에 모든 컴포넌트 작성하기
+분리될 수 있는 컴포넌트 찾기 (최적화)
+페이지에서 분리된 컴포넌트는 해당 페이지 폴더에서 컴포넌트 폴더를 만들고 index로 모듈화 구조 만들기
+여러 페이지에서 분리된 컴포넌트를 사용하게 된다면, 공통 컴포넌트 폴더 이동
+때에 따라 페이지 폴더에서 공통 컴포넌트 폴더를 만들어 사용할 수 있음(선택) */
